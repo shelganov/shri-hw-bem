@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex">
+    <title>SHRI - homework #1</title>
+    <link rel="stylesheet" href="dist/index.css">
+</head>
+<body>
+    <div class="Content">
+        <header class="Header">
+            <div class="Header-inner">
+                <a href="/" class="Logo"></a>
+                <div class="Container">
+                <ul class="ListInline listUnstyled Menu">
+                    <li class="Menu-item Menu-item_active"><a href="#" class="Menu-link">События</a></li>
+                    <li class="Menu-item"><a href="#" class="Menu-link">Сводка</a></li>
+                    <li class="Menu-item"><a href="#" class="Menu-link">Устройства</a></li>
+                    <li class="Menu-item"><a href="#" class="Menu-link">Сценарии</a></li>
+                    <li class="Menu-item"><a href="video.html" class="Menu-link">Видео</a></li>
+                </ul>
+                <div id="js-side-menu-trigger" class="Hamburger">
+                    <div class="Hamburger-icon"></div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <template id="tplBase">
+                <div class="Card">
+                    <div class="card__Header">
+                        <div class="icon card__icon"></div>
+                        <div class="card__title"></div>
+                    </div>
+                    <div class="card__source"></div>
+                    <div class="card__time"></div>
+                </div>
+            </template>
+
+            <template id="tplPlayer">
+                <div class="player card__player">
+                    <div class="player__cover"></div>
+                    <div class="player__track">
+                        <div class="player__track-title">
+                            <span class="player__track-artist"></span>
+                            <span>-</span>
+                            <span class="player__track-name"></span>
+                        </div>
+                        <div class="player__track-slider track-slider">
+                            <div class="track-slider__line">
+                                <div class="track-slider__ctrl"></div>
+                            </div>
+                            <div class="player__track-length"></div>
+                        </div>
+                    </div>
+                    <div class="player__controls">
+                        <div class="player__ctrl player__ctrl_type_prev"></div>
+                        <div class="player__ctrl player__ctrl_type_next"></div>
+                        <div class="vol-slider">
+                            <div class="vol-slider__ctrl"></div>
+                        </div>
+                        <div class="vol-slider-val"><span class="vol-slider-val__length"></span>%</div>
+                    </div>
+                </div>
+            </template>
+            <div class="container container-grid">
+                <h1 class="main-title">Лента событий</h1>
+                <div class="cards">
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <ul class="ListInline listUnstyled footer__links">
+                    <li class="footer__links-item"><a href="#" class="footer__link">Помощь</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Обратная связь</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Разработчикам</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Условия использования</a></li>
+                    <li class="footer__links-item"><a href="https://docviewer.yandex.ru/view/1130000031416129/?*=NDquAwEqAaHVit0R666Z9nfyxRB7InVybCI6InlhLXdpa2k6Ly93aWtpLWFwaS55YW5kZXgucnUvc2hyaS0yMDE4LWlpL2hvbWV3b3JrL2FkYXB0aXZuYWphLXZqb3JzdGthL2xpY2Vuc2UucGRmIiwidGl0bGUiOiJsaWNlbnNlLnBkZiIsInVpZCI6IjExMzAwMDAwMzE0MTYxMjkiLCJ5dSI6IjYzNTM1OTM5NDE0OTU4MzYxMTciLCJub2lmcmFtZSI6ZmFsc2UsInRzIjoxNTM4ODkzMjg3MTY0fQ%3D%3D" class="footer__link">Авторские права</a></li>
+                </ul>
+                <div class="footer__copyright">© 2001–2017 &nbsp;ООО «Яндекс»</div>
+            </div>
+        </footer>
+    </div>
+    <div class="side-menu">
+        <div class="side-menu__content">
+            <div class="side-menu__Header">
+                <div class="logo"></div>
+                <div class="cross side-menu__cross">×</div>
+            </div>
+            <ul class="listUnstyled side-menu__list">
+                <li class="side-menu__item active"><a href="#" class="menu__link">События</a></li>
+                <li class="side-menu__item"><a href="#" class="menu__link">Сводка</a></li>
+                <li class="side-menu__item"><a href="#" class="menu__link">Устройства</a></li>
+                <li class="side-menu__item"><a href="#" class="menu__link">Сценарии</a></li>
+                <li class="side-menu__item"><a href="video.html" class="menu__link">Видео</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="dist/index.bundle.js"></script>
+</body>
+</html>
+
+
+
+
+

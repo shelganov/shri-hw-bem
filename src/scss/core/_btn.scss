@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  padding: 13px 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  background: #E5E5E5;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  //transition: .2s background-color ease;
+
+  @include m(xs) {
+    padding: 9px 50px;
+  }
+
+  &_color_brand {
+    background-color: #FFD93E;
+  }
+
+  &_size_xs {
+    padding: 6px 11px;
+    font-size: 12px;
+  }
+
+  &_type_transparent {
+    background-color: transparent;
+    color: #fff;
+  }
+}

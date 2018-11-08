@@ -1,0 +1,127 @@
+
+.videotiles {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px;
+  grid-gap: 5px;
+  height: 100%;
+  margin-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-rows: 300px 300px;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-rows: 150px 150px;
+  }
+}
+
+
+
+.card-video {
+  transition: .2s all;
+
+
+  &__control {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__controls {
+    width: 100%;
+    //display: flex;
+    //flex-direction: column;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    z-index: 11;
+
+    &-top {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include m-max(480px) {
+        display: none;
+      }
+    }
+
+    &-bottom {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: auto;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__input {
+    width: 100px;
+    height: 20px;
+  }
+
+
+  &__btn {
+    position: relative;
+    padding: 2px;
+    margin-right: 10px;
+    visibility: hidden;
+    background-color: rgba(99, 99, 99, .3);
+    z-index: 12;
+  }
+
+  &__brightness {
+    padding: 2px;
+    margin-right: 5px;
+    visibility: hidden;
+    font-size: 10px;
+    color: #fff;
+    background-color: rgba(99, 99, 99, .3);
+  }
+
+  &__contrast {
+    padding: 2px;
+    margin-right: 5px;
+    visibility: hidden;
+    font-size: 10px;
+    color: #fff;
+    background-color: rgba(99, 99, 99, .3);
+  }
+
+  &__volume {
+    width: 30px;
+    height: 5px;
+    background-color: #fafafa;
+  }
+
+  &.active {
+    position: relative;
+    will-change: transform;
+    //background-color: #fff;
+    z-index: 9;
+
+    .card-video {
+
+      &__brightness,
+      &__contrast,
+      &__btn,
+      &__controls {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}

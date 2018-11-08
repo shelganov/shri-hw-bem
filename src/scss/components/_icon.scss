@@ -1,0 +1,61 @@
+.icon {
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &_size_52 {
+    //width: 52px;
+    //height: 52px;
+  }
+
+  // Вариации иконок
+  &_thumb {
+
+    &_key {
+      width: 50px;
+      height: 45px;
+      background-image: url('../img/key.svg');
+    }
+
+    &_stats {
+      background-image: url('../img/stats.svg');
+    }
+
+    &_robot-cleaner {
+      background-image: url('../img/robot-cleaner.svg');
+    }
+
+    &_router {
+      background-image: url('../img/router.svg');
+    }
+
+    &_battery {
+      background-image: url('../img/battery.svg');
+    }
+
+    &_cam {
+      background-image: url('../img/cam.svg');
+    }
+
+    &_kettle {
+      background-image: url('../img/kettle.svg');
+    }
+
+    &_thermal {
+      background-image: url('../img/thermal.svg');
+    }
+
+    &_ac {
+      background-image: url('../img/ac.svg');
+    }
+
+    &_music {
+      background-image: url('../img/music.svg');
+    }
+
+    &_fridge {
+      background-image: url('../img/fridge.svg');
+    }
+  }
+}

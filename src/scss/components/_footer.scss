@@ -1,0 +1,48 @@
+.footer {
+  grid-row-start: 3;
+  padding: 22px 28px;
+  margin-top: 20px;
+  border-top: 1px solid #F0F0F0;
+
+  &__inner {
+    @include clearfix;
+
+    @include m-max(768px) {
+      text-align: center;
+    }
+  }
+
+  &__links {
+    float: left;
+
+    @include m-max(768px) {
+      display: block;
+      float: none;
+    }
+
+    &-item {
+      margin-right: 15px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link,
+  &__copyright {
+    font-size: 12px;
+    color: #858585;
+  }
+
+  &__link {
+    float: left;
+  }
+
+  &__copyright {
+    float: right;
+
+    @include m-max(768px) {
+      display: block;
+      float: none;
+      margin-top: 10px;
+    }
+  }
+}

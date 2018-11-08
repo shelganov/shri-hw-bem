@@ -1,0 +1,18 @@
+.Hamburger {
+  display: none;
+  float: right;
+  margin-top: 7px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-icon {
+    width: 16px;
+    height: 14px;
+    background: url("../img/hamburger.svg") no-repeat center;
+  }
+
+  @media screen and (max-width: 620px) {
+    display: block;
+  }
+}

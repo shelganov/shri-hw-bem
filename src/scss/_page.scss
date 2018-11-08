@@ -1,0 +1,8 @@
+.main-title {
+  margin-top: 34px;
+
+  @include m(xs) {
+    margin-top: 0;
+    margin-bottom: 19px;
+  }
+}

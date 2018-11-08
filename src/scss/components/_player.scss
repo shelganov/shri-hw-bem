@@ -1,0 +1,122 @@
+.player {
+
+  &__cover {
+    width: 53px;
+    height: 52px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__track {
+    min-width: 0;
+    flex: 1;
+
+    @include m(xs) {
+      flex: 1 0 170px;
+    }
+
+    &-title {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      min-width: 0;
+      letter-spacing: .9px;
+      
+      @include m(xs) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &-length {
+      margin-left: 14px;
+      font-size: 14px;
+      color: #D5A1A1A1;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__ctrl {
+    display: inline-block;
+    width: 60px;
+    height: 52px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &_type {
+      &_prev {
+        background-image: url('../img/prev-db.svg');
+      }
+
+      &_next {
+        background-image: url('../img/next-db.svg');
+      }
+    }
+  }
+}
+
+// Слайдер для перемотки 1 песни
+.track-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__line {
+    position: relative;
+    width: 350px;
+    height: 1px;
+    background-color: #979797;
+  }
+
+  &__ctrl {
+    position: absolute;
+    top: -10px;
+    left: 20%;
+    width: 12px;
+    height: 20px;
+    background: #D8D8D8;
+    border-radius: 4.5px;
+
+    @include m(xs) {
+      width: 6px;
+    }
+  }
+}
+
+// Слайдер для регулировки громкости
+.vol-slider {
+  position: relative;
+  width: 267px;
+  height: 4px;
+  background: rgba(216,216,216,0.30);
+  border-radius: 2px;
+
+
+  &__ctrl {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 17px;
+    height: 16px;
+    background: #605757;
+    border-radius: 26px;
+  }
+
+  &-val {
+    margin-left: 14px;
+    font-size: 14px;
+    color: #D5A1A1A1;
+  }
+
+}
