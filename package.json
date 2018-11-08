@@ -7,7 +7,7 @@
     "prod": "webpack --mode production",
     "dev": "webpack --watch --mode development",
     "node": "ts-node app/server.ts",
-    "start": "webpack-dev-server --host localhost --port 3000"
+    "start": "webpack --mode production && webpack-dev-server --host localhost --port 3000"
   },
   "repository": {
     "type": "git",

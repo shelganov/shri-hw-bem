@@ -4,6 +4,8 @@
 
 html,
 body {
+  padding: 0;
+  margin: 0;
   height: 100%;
 }
 
@@ -12,6 +14,11 @@ body {
   font-size: $font-size-base;
   color: $text-color-base;
   line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
 }
 
 img {

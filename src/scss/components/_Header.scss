@@ -8,8 +8,8 @@
     border-bottom: 0;
   }
 
-  &-inner {
-    @include clearfix;
+  &-Inner {
+    @include Clearfix;
     @media screen and (max-width: 620px) {
     }
   }

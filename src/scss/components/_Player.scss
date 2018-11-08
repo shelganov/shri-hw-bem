@@ -1,6 +1,6 @@
-.player {
+.Player {
 
-  &__cover {
+  &-Cover {
     width: 53px;
     height: 52px;
     border-radius: 10px;
@@ -65,34 +65,6 @@
   }
 }
 
-// Слайдер для перемотки 1 песни
-.track-slider {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-start;
-
-  &__line {
-    position: relative;
-    width: 350px;
-    height: 1px;
-    background-color: #979797;
-  }
-
-  &__ctrl {
-    position: absolute;
-    top: -10px;
-    left: 20%;
-    width: 12px;
-    height: 20px;
-    background: #D8D8D8;
-    border-radius: 4.5px;
-
-    @include m(xs) {
-      width: 6px;
-    }
-  }
-}
 
 // Слайдер для регулировки громкости
 .vol-slider {

@@ -12,53 +12,53 @@
 <body>
     <div class="Content">
         <header class="Header">
-            <div class="Header-inner">
+            <div class="Header-Inner">
                 <a href="/" class="Logo"></a>
                 <div class="Container">
-                <ul class="ListInline listUnstyled Menu">
-                    <li class="Menu-item Menu-item_active"><a href="#" class="Menu-link">События</a></li>
-                    <li class="Menu-item"><a href="#" class="Menu-link">Сводка</a></li>
-                    <li class="Menu-item"><a href="#" class="Menu-link">Устройства</a></li>
-                    <li class="Menu-item"><a href="#" class="Menu-link">Сценарии</a></li>
-                    <li class="Menu-item"><a href="video.html" class="Menu-link">Видео</a></li>
+                <ul class="ListInline ListUnstyled Menu">
+                    <li class="Menu-Item Menu-Item_active"><a href="#" class="Menu-Link">События</a></li>
+                    <li class="Menu-Item"><a href="#" class="Menu-Link">Сводка</a></li>
+                    <li class="Menu-Item"><a href="#" class="Menu-Link">Устройства</a></li>
+                    <li class="Menu-Item"><a href="#" class="Menu-Link">Сценарии</a></li>
+                    <li class="Menu-Item"><a href="video.html" class="Menu-Link">Видео</a></li>
                 </ul>
                 <div id="js-side-menu-trigger" class="Hamburger">
-                    <div class="Hamburger-icon"></div>
+                    <div class="Hamburger-Icon"></div>
                 </div>
                 </div>
             </div>
         </header>
         <main>
-            <template id="tplBase">
+            <template id="TplBase">
                 <div class="Card">
-                    <div class="card__Header">
-                        <div class="icon card__icon"></div>
-                        <div class="card__title"></div>
+                    <div class="Card-Header">
+                        <div class="Icon Card-Icon"></div>
+                        <div class="Card-Title"></div>
                     </div>
-                    <div class="card__source"></div>
-                    <div class="card__time"></div>
+                    <div class="Card-Source"></div>
+                    <div class="Card-Time"></div>
                 </div>
             </template>
 
-            <template id="tplPlayer">
-                <div class="player card__player">
-                    <div class="player__cover"></div>
-                    <div class="player__track">
-                        <div class="player__track-title">
-                            <span class="player__track-artist"></span>
+            <template id="TplPlayer">
+                <div class="Card-Player Player">
+                    <div class="Player-Cover"></div>
+                    <div class="Player-Track Track">
+                        <div class="Track-Title">
+                            <span class="Track-Artist"></span>
                             <span>-</span>
-                            <span class="player__track-name"></span>
+                            <span class="Track-Name"></span>
                         </div>
-                        <div class="player__track-slider track-slider">
+                        <div class="Player-track-slider track-slider">
                             <div class="track-slider__line">
                                 <div class="track-slider__ctrl"></div>
                             </div>
-                            <div class="player__track-length"></div>
+                            <div class="Player-track-length"></div>
                         </div>
                     </div>
-                    <div class="player__controls">
-                        <div class="player__ctrl player__ctrl_type_prev"></div>
-                        <div class="player__ctrl player__ctrl_type_next"></div>
+                    <div class="Player-controls">
+                        <div class="Player-ctrl Player-ctrl_type_prev"></div>
+                        <div class="Player-ctrl Player-ctrl_type_next"></div>
                         <div class="vol-slider">
                             <div class="vol-slider__ctrl"></div>
                         </div>
@@ -66,15 +66,15 @@
                     </div>
                 </div>
             </template>
-            <div class="container container-grid">
-                <h1 class="main-title">Лента событий</h1>
-                <div class="cards">
+            <div class="Container container-grid">
+                <h1 class="MainTitle">Лента событий</h1>
+                <div class="Cards">
                 </div>
             </div>
         </main>
         <footer class="footer">
             <div class="footer__inner">
-                <ul class="ListInline listUnstyled footer__links">
+                <ul class="ListInline ListUnstyled footer__links">
                     <li class="footer__links-item"><a href="#" class="footer__link">Помощь</a></li>
                     <li class="footer__links-item"><a href="#" class="footer__link">Обратная связь</a></li>
                     <li class="footer__links-item"><a href="#" class="footer__link">Разработчикам</a></li>
@@ -91,7 +91,7 @@
                 <div class="logo"></div>
                 <div class="cross side-menu__cross">×</div>
             </div>
-            <ul class="listUnstyled side-menu__list">
+            <ul class="ListUnstyled side-menu__list">
                 <li class="side-menu__item active"><a href="#" class="menu__link">События</a></li>
                 <li class="side-menu__item"><a href="#" class="menu__link">Сводка</a></li>
                 <li class="side-menu__item"><a href="#" class="menu__link">Устройства</a></li>

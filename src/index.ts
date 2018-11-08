@@ -13,7 +13,7 @@ import Framework from './framework/Framework';
  * Рендер главной страницы
  */
 function renderMainPage(): void {
-    const root = document.querySelector<HTMLElement>('.cards');
+    const root = document.querySelector<HTMLElement>('.Cards');
 
     if (!root)
         return;
@@ -90,10 +90,10 @@ framework.register("CHANGE_TRACK", (payload: {}): void => {
 document.addEventListener('DOMContentLoaded', (): void => {
     initMenu();
     renderMainPage();
-    let cardTitles: NodeListOf<HTMLElement> = document.querySelectorAll('.card__title');
+    let cardTitles: NodeListOf<HTMLElement> = document.querySelectorAll('.Card-Title');
     ellipsizeText(cardTitles);
 
-    const btnNextTrack = document.querySelector<HTMLElement>('.player__ctrl_type_next');
+    const btnNextTrack = document.querySelector<HTMLElement>('.Player-Ctrl_type_next');
 
     if (!btnNextTrack)
         return;

@@ -1,0 +1,13 @@
+@mixin ListUnstyled {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin ListInline {
+  @include Clearfix;
+
+  li {
+    float: left;
+  }
+}

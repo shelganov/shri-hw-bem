@@ -1,0 +1,46 @@
+.Track {
+
+  &-Title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 0;
+    letter-spacing: .9px;
+
+    @include m(xs) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  // Слайдер для перемотки 1 песни
+  &-Slider {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__line {
+      position: relative;
+      width: 350px;
+      height: 1px;
+      background-color: #979797;
+    }
+
+    &__ctrl {
+      position: absolute;
+      top: -10px;
+      left: 20%;
+      width: 12px;
+      height: 20px;
+      background: #D8D8D8;
+      border-radius: 4.5px;
+
+      @include m(xs) {
+        width: 6px;
+      }
+    }
+  }
+
+}

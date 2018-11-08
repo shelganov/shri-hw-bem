@@ -1,26 +1,27 @@
-@import "normalize";
+//@import "normalize";
 
-@import "mixins/clearfix";
-@import "mixins/lists";
+@import "mixins/Clearfix";
+@import "mixins/Lists";
 @import "mixins/media";
 
-@import "utility-classes";
+@import "UtilityClasses";
 
-@import "core/variables";
-@import "core/base";
-@import "core/grid";
-@import "core/typograpy";
-@import "core/btn";
+@import "core/Variables";
+@import "core/Base";
+@import "core/Grid";
+@import "core/Typograpy";
+@import "core/Btn";
 
 @import "components/Header";
 @import "components/Menu";
 @import "components/Logo";
 @import "components/Hamburger";
 @import "components/footer";
-@import "components/card";
-@import "components/icon";
-@import "components/player";
-@import "components/side-menu";
+@import "components/Card";
+@import "components/Icon";
+@import "components/Camera";
+@import "components/Player";
+@import "components/Side-menu";
 
-@import "page";
-@import "pages/page-video";
+@import "Page";
+//@import "pages/page-video";
